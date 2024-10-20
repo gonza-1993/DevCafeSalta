@@ -1,0 +1,146 @@
+/* Imagen de fondo para toda la página */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Asegúrate de que el body y html ocupen el 100% del viewport */
+    background-image: url('./image/fondo.jpg'); /* Cambia esta ruta a la imagen de fondo deseada */
+    background-size: cover; /* Asegúrate de que la imagen cubra todo el fondo */
+    background-position: center; /* Centra la imagen de fondo */
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #fff; /* Cambiar el color del texto por defecto a blanco */
+}
+
+/* Navbar Styling */
+.navbar {
+    z-index: 1000;
+}
+
+.nav-link {
+    margin-right: 20px;
+    font-size: 1rem;
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007bff; /* Color al pasar el mouse */
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centrar verticalmente */
+    color: rgb(5, 5, 5);
+    text-align: center;
+    padding: 100px 20px; /* Agregar margen lateral */
+}
+
+.hero-section h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.btn-primary, .btn-secondary {
+    margin: 0 10px;
+    padding: 10px 30px;
+}
+
+/* About Section */
+.about-section {
+    padding: 60px 0;
+    background-color: rgba(233, 236, 239, 0.9); /* Fondo con opacidad */
+    color: #333;
+}
+
+.about-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 1.2rem;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 60px 0;
+    background-color: rgba(248, 249, 250, 0.9); /* Fondo con opacidad */
+    color: #333;
+}
+
+.contact-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+}
+
+.footer-links a {
+    color: #ddd;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: #fff;
+}
+
+/* Home Image (responsive) */
+.home-image {
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+    padding-inline: 0;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 60px 0;
+    }
+
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-section p {
+        font-size: 1.2rem;
+    }
+
+    .btn-primary, .btn-secondary {
+        padding: 8px 20px;
+        font-size: 1rem;
+    }
+
+    .about-section, .contact-section {
+        padding: 40px 20px;
+    }
+
+    .about-section h2, .contact-section h2 {
+        font-size: 2rem;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+}
